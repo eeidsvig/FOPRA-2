@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.2 (2020-10-22)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
+
+\usepackage[english]{babel} % Specify a different language here - english by default
+
+\usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
+
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+
+\hypersetup{
+	hidelinks,
+	colorlinks,
+	breaklinks=true,
+	urlcolor=color2,
+	citecolor=color1,
+	linkcolor=color1,
+	bookmarksopen=false,
+	pdftitle={Title},
+	pdfauthor={Author},
+}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Technische Universität München} % Journal information
+\Archive{Fortgeschrittenenpraktikum 2} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Radon concentration in room air} % Article title
+\Authors{Erik Eidsvig, Iglin Bolatt, Martin Durner*}%\textsuperscript{a}*
+%\affiliation{\textsuperscript{a}\textit{Technische Universität München, Germany}} % Author affiliation
+\affiliation{*\textbf{E-Mail}: eeidsvig@gmail.com, ilginbolatt@gmail.com, martin.durner@tum.de} %
+
+\Abstract{In this experiment we determine the radon concentration in room air.}
+
+\begin{document}
+
+\maketitle % Output the title and abstract box
+
+\tableofcontents % Output the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%\section*{Introduction} % The \section*{} command stops section numbering
+
+%\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+
+
+\section{Introduction} %or Motivation
+
+Our goal is to determine the radon concentration in the air. Radon is a daughter element of the radioactive decay of natural uranium and ???. Since radon is a noble gas, it can degas out of the stone and accumulate in the room air.
+
+
+
+\section{Theoretical Background}
+
+\textbf{Activity.}
+ The activity of radioactive materials is measured in ??? and is calculated by
+\begin{equation}
+   A=A_0 e^{-\lambda t}
+   \label{equ:Activity}
+\end{equation}
+where $\lambda=1/\tau$ and $\tau$ is the lifetime of the isotope. The factor $A_0=\lambda N_0$ corresponds to the original number of atoms.
+The number of detected $\gamma$ particles $N_\gamma$ and the concentration of lead $\rho_{Pb}$ are related by
+ \begin{equation}
+    N_\gamma=\epsilon_f \epsilon_d R \rho_{Pb} V \cdot
+     \label{equ:PbConcentration}
+ \end{equation}
+$
+    \biggl[ \biggl\{ \frac{1}{\lambda_{Po}}+\frac{1}{\lambda_{Pb}}+\frac{\lambda_{Pb}}{\lambda_{Po}\(\lambda_{Po}-\lambda_{Pb}\)}+\lambda_{Po}e^{-\lambda_{Pb}T_f}\frac{1}{\lambda_{Pb}\(\lambda_{Pb}-\lambda_{Po}\)}\biggr\}$
+
+    $(e^{-\lambda_{Pb}t_1}-e^{-\lambda_{Pb}t_2})+\frac{\lambda_{Pb}}{\lambda_{Po}\(\lambda_{Po}-\lambda_{Pb}\)}
+    (1-e^{-\lambda_{Po}T_f})(e^{-\lambda_{Po}t_1}-e^{-\lambda_{Po}t_2})\biggr]
+$
+
+ where $V$ is the air throughput of the filter, $\epsilon_d$ is the detection probability for a gamma particle of this energy, $R$ is the branching ratio, $T_f$ is the duration of air filtering and $t_1$ and $t_2$ are the start and stop time of the data collection after turning off the air filter.\\
+
+\section{Experimental Setup}
+
+The experimental setup consists of an air filter and a high-precision Germanium detector. First, the air filter pumps room air through a filter paper to filter out lead particles which are daughter elements of the Radon decay. Afterward, the filter paper is placed on top of the Germanium detector. This detector measures the deposited energy for each gamma particle. A computer connected to the detector creates an intensity-energy spectrum.
+
+\section{Findings and Discussion} % or Evaluation, Analysis, ...
+
+\textbf{Energy Calibration.} The energy scale of the spectrum has to be calibrated. Therefore the spectrum of $^{133}Ba$ and $^{60}Co$ is obtained. The peaks in the spectra are assigned to the distinct energy peaks at $80.9971$ keV, $276.398$ keV, $302.853$ keV and $356.017$ keV for $^{133}Ba$ and $1173.237$ keV and $1332.501$ keV for $^{60}Co$.
+
+\textbf{Efficiency Calibration.} Furthermore, the efficiency of the HPGe detector has to be determined.
+
+
+, the birthplace of a star is interstellar gas clouds, which, above a certain limiting mass, contract against gas and radiation pressure under the effect of gravity. Due to local density differences, for example, the interstellar gas cloud disintegrates into several subclouds, which explains why stars always form in groups and why double and multiple star systems also occur very frequently. When the contraction of the gas cloud is far advanced and above a certain limiting mass, the centre has heated up so much and the density has increased so much that nuclear fusion begins and the star enters the main sequence stage. If hydrogen fusion does not occur because the initial mass is too low, the star remains a brown dwarf. The following characteristics are essential for a star in the main sequence stage: firstly, hydrogen fusion takes place in the core. Secondly, gravitational pressure and gas and radiation pressure are in equilibrium, so that main sequence stars are very stable. The more massive the star, the higher the pressure and temperature in the core of the star and the higher the radiant power (this corresponds to faster burning and thus to a shorter lifetime). If the hydrogen in the core is almost completely fused into helium-4, the radiation pressure decreases so that the star contracts. As a result of the release of gravitational energy, the temperature in the interior rises again and from about 100 million Kelvin, helium burning begins, whereby helium is fused into carbon-12. Gas and radiation pressure now increase significantly again and the star expands considerably. It has now reached the stage of a red giant. In ever shorter periods of time, fusion processes of heavier elements up to iron then begin (again with sufficiently large mass). If the mass is not large enough (approximately below 1.5 solar masses), no further fusion takes place after helium burning and a white dwarf remains. For higher masses, supernovae usually take place and the final state of the star results in neutron stars or black holes.
+\\
+\textbf{Hertzsprung-Russell diagram (HRD) and color-magnitude diagram (CMD).} The Hertzsprung-Russell diagram plots the absolute magnitude of stars and thus makes the different development stages of stars visible. In figure \ref{fig:HRD} the main sequence is marked with a connected line. The red giants are found above and the white dwarfs below the main sequence. For main sequence stars, there is also the empirical mass-luminosity relation, which qualitatively states that a larger mass means a higher luminosity. Massive main sequence stars are therefore found at small absolute magnitudes. In practice and for observing star clusters, one often uses the observational equivalent to the HRD which is the color-magnitude diagram. Here, the apparent magnitude (which is up to rescaling identical with the absolute magnitude because stars of a star cluster can all be taken to have the same distance) is plotted against the color index. The main sequence as well as the giant and dwarf section are visible exactly as in the case of an HRD.
+\\
+
+\begin{figure}%[H]
+    \centering
+    \includegraphics[width= 9 cm]{Figures/HertzsprungRussellDiagram.png}
+    \caption{Hertzsprung-Russell diagram.\cite{Inglis}}
+    \label{fig:HRD}
+\end{figure}
+
+\textbf{Star Clusters.}
+Generally we distinguish clusters according to their age, star population and size. Younger star clusters with ages of several million to a billion years and Population I stars are referred to as open clusters. They consist only of a few hundred stars, are located in the galactic disk and have diameters between 1 and 10 pc. With an estimated total number of 20000 open clusters in our galaxy, they are relatively common. Another type of star clusters are globular clusters, which are located primarily in the galactic halo and have ages of a few billion years. They are significantly larger in size: typical diameters are 40 pc and the number of stars can range between a few hundred thousand to a few million stars. Since most stars in a cluster are of the same age, clusters are perfect to study the aging behaviour of stars. The similar distance and chemical composition due to the common origin of the stars are beneficial as well. We focus on open clusters, since the high density of stars in the core of globular clusters together with the larger distance render the construction of CMDs for those objects difficult. \cite{Stevenson}, \cite{guide}
+
+\section{Conclusion}
+\textbf{Data set.}
+We observed the open star clusters M36 (right ascension: $05^{\mathrm{h}} \ 36^{\mathrm{m}} \ 18.0^{\mathrm{s}}$, declination: $34^{\circ} \ 08`\ 24``$) and M37 (right ascension: $05^{\mathrm{h}} \ 52^{\mathrm{m}} \ 18^{\mathrm{s}}$, declination: $32^{\circ} \ 33`\ 02``$). For the first cluster we used a 5s exposure time and for the second one a 10s exposure time. Additionally 3 filters (R, G, B) corresponding to the red, green and blue color-regimes were used during observation; however only the G and B filters were used for constructing the CMDs.
+\\
+\textbf{Data reduction.}
+The data reduction takes place in a three-step process as indicated in the userguide \cite{guide}. We use the reduction pipeline coded by Geza Csornyei, which can be found on GitHub at \url{https://github.com/Csogeza/FoPra85}.
+
+The images of the astronomical objects are taken by a CCD camera, whose mode of operation induces some unwanted noise signals, which have to be eliminated by data reduction. The voltage applied when reading the images causes a small offset of the pixel values, which has to be corrected so that the zero point of the CCD output and the pixel-value scale coincide. For this purpose seven bias frames with an integration time of zero seconds were recorded, which are finally combined to a master bias frame by averaging.
+A next interfering factor is the thermal excitation of electrons from the valence band into the conduction band of the silicon deposited on the CCD chip. To correct this, seven dark frames with an integration time of 60s each were recorded. Since this exposure time differs from that of the actual science images, the dark frames must be scaled down accordingly before subtraction from the science images. Finally, to create the master flats, the master bias is first subtracted from the individual dark frames and then the dark frames are combined into one master dark frame.
+Finally, the conversion efficiency from a light signal to an electrical signal varies locally and is by no means constant over the whole chip. To correct this effect, some flat-field images are taken. Here the telescope is aligned to the relatively uniform sky of the twilight. After filtering out the images where saturated pixels appear, three remain for the B filter, four for the G filter and four for the R filter. The creation of the master flats frames is analogous to before: first the master dark frames are subtracted from the individual flat fields, taking into account possibly different exposure times. Then, for each filter separately, the flat fields are combined to form, in our case, three master flat fields.
+The calibration images generated in this way can now be used to process the science images: first, the master bias is subtracted from all images, regardless of the exposure time or the filter used. Then, taking into account the different exposure times, the master dark frame is subtracted. Finally, the master flat field is divided for each filter separately, taking into account the different exposure times.
+
+The figures \ref{fig:combined_M36_Blue} and \ref{fig:combined_M37_Blue} show the combined science images of the observed objects M36 and M37 after calibration in the blue filter.
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 9cm]{Figures/combined_M36_Blue.png}
+    \caption{M36 after calibration in the blue filter.}
+    \label{fig:combined_M36_Blue}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width = 9cm]{Figures/combined_M37_Blue.png}
+    \caption{M37 after calibration in the blue filter.}
+    \label{fig:combined_M37_Blue}
+\end{figure}
+
+\textbf{Photometric measurements.}
+In order to construct a CMD, for all stars within the considered open star cluster, among other things, their apparent brightness must be known. The photometric measurements pursue this goal. For this report the method of aperture photometry is used, which works as follows: Using a source detection algorithm, first a list of all stars is generated whose maximum brightness exceeds a given limit above the background and which are far enough away from other stars to prevent crowding. For each of these stars, aperture photometry is now performed: the signal is integrated over a circular aperture around the star under consideration, with the radius of the aperture determined by calculating the full width at half maximum of the signal. Finally, within the individual apertures determined in this way, the number of all measured light signals is summed up, i.e. the flux of light from and thus a measure of the apparent brightness of the stars is determined. In order to consider only stars with a high probability of belonging to the cluster under consideration, only a section of the acquired image is analyzed, as shown in figure \ref{fig:M37_rad}. Finally, reference stars with known apparent magnitudes must be identified to convert the measured fluxes into apparent magnitudes. The list of stars used for this purpose can be found in table \ref{tab:stars}. Therefore, when taking over the apparent magnitudes in the corresponding color filters from databases, we made the identifications V = G and R = J.
+
+\begin{table*}
+    \centering
+    \begin{tabular}{c||c|c|c|c}
+        \   &   Star            &   Magnitude B &   Magnitude V &   Magnitude J.\\ \hline \hline
+        M36 &   BD +34 1108     &   9.97        &   9.92        &   9.693       \\ \hline
+        \   &   BD +34 1103     &   8.82        &   8.79        &   8.763       \\ \hline
+        \   &   NGC 1960 13     &   10.93       &   10.80       &   10.405      \\ \hline
+        \   &   NGC 1960 44     &   11.47       &   11.38       &   11.063      \\ \hline \hline
+        M37 &   NGC 2099 15     &   12.09       &   11.84       &   11.23       \\ \hline
+        \   &   NGC 2099 93     &   12.58       &   12.18       &   11.264      \\ \hline
+        \   &   NGC 2099 178    &   10.91       &   10.67       &   9.981       \\ \hline
+        \   &   NGC 2099 76     &   11.15       &   10.87       &   9.72
+    \end{tabular}
+    \caption{Reference stars for M36 and M37. Data taken from \url{https://aladin.cds.unistra.fr/AladinLite/} and \url{http://cdsportal.u-strasbg.fr/}.}
+    \label{tab:stars}
+\end{table*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width = 8.5 cm]{Figures/M36_Radius_Photometry.png}
+    \includegraphics[width = 8.5 cm]{Figures/M37_Radius_Photometry.png}
+    \caption{Stars used for photometry in M36 (left) and M37 (right).}
+    \label{fig:M37_rad}
+\end{figure*}
+
+Using the values for interstellar extinction
+\begin{equation}
+    A_B = 0.90, \ \ \ A_V = 0.68, \ \ \ A_R = 0.56
+\end{equation}
+for M36 and
+\begin{equation}
+    A_B = 1.23, \ \ \ A_V = 0.93, \ \ \ A_R = 0.77
+\end{equation}
+for M37 which have to be subtracted from the measured apparent magnitudes we finally can construct the CMDs for the two open star clusters. The results are shown in figure \ref{fig:M37_CMD}. Notice that the values for interstellar extinction vary depending on the filters being used. In particular, extinction in the blue part of the spectrum is stronger than in the red part. Two processes are essential for this effect: first, light of low wavelength is absorbed by small dust grains and then re-emitted in the infrared range. This results in interstellar reddening.  Second, light is elastically scattered by very small dust grains or single atoms or small molecules (as well as hydrogen or helium) with the process of Rayleigh scattering. As known from electrodynamics, the effective cross section of this scattering process is proportional to $\lambda^{-4}$. So also here blue light is scattered more strongly than red light.
+
+\begin{figure*}
+    \centering
+    \includegraphics[width = 8.5 cm]{Figures/M36_CMD_BG_korr.png}
+    \includegraphics[width = 8.5 cm]{Figures/M37_CMD_BG_korr.png}
+    \caption{Color-magnitude diagram for M36 (left) and M37 (right) corrected for interstellar extinction.}
+    \label{fig:M37_CMD}
+\end{figure*}
+
+\textbf{Interpretation of the results.}
+To be able to interpret the CMDs well, we show them in Figure \ref{fig:both} in the same diagram. First, you can see that the two main sequences are well aligned. This indicates that the two star clusters are approximately equidistant. Comparing with the literature values \cite{webda}
+\begin{equation}
+    d_{\mathrm{M36}} = 1318 \, \mathrm{pc} \ \ \mathrm{and} \ \ d_{\mathrm{M37}} = 1383 \, \mathrm{pc},
+\end{equation}
+this is confirmed. Second, the turn-off point of the main sequence of M37 appears earlier than for M36. Additionally, M37 has already developed a red giant branch whereas M36 has not. This suggests a significantly older age for M37. In fact, literature research yields \cite{webda}:
+\begin{equation}
+    T_{\mathrm{M36}} = 29.4 \, \mathrm{MYr} \ \ \mathrm{and} \ \ T_{\mathrm{M37}} = 347 \, \mathrm{MYr}.
+\end{equation}
+So, M36 is a very young open cluster while M37 is of intermediate age.
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 9 cm]{Figures/M37_M36_BG_korr.png}
+    \caption{CMDs for M36 and M37 plotted in the same diagram. Both are corrected for interstellar extinction.}
+    \label{fig:both}
+\end{figure}
+
+
+\phantomsection
+\bibliographystyle{unsrt}
+\bibliography{sample.bib}
+
+\end{document}
