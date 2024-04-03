@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
 # Path to the uploaded file
-file_path = 'calib_ba133.txt'
+file_path = 'sample.txt'
 
 # Initialize lists to store x and y values
 x_values = []
